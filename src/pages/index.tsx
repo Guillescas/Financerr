@@ -1,14 +1,17 @@
+import React, { ReactElement } from 'react';
 import Head from 'next/head';
 
-export default function Home() {
+import styles from '../styles/pages/Home.module.css';
+import { Sidebar } from '../components/Sidebar';
+
+export default function Home(): ReactElement {
   return (
-    <div>
+    <div className={styles.container}>
       <Head>
-        <title>Financare</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Dashboard | Financerr</title>
       </Head>
 
-      
+      <Sidebar />
     </div>
-  )
+  );
 }
