@@ -3,11 +3,12 @@
   margin: 0;
   box-sizing: border-box;
 
-  transition: all 0.2s;
+  transition: background 0.2s;
 }
 
 html {
   background: var(--background);
+  color: var(--text);
 }
 
 :root {
@@ -16,20 +17,28 @@ html {
   --text: #353535;
   --primary: #C2BB9F;
   --secondary: #4f5d75;
+  --green: #83c5be;
+  --green-strong: #006d77;
+  --red: #f87060;
   --other: #bfc0c0;
   --hover: #c9c9c9;
 }
 
 [data-theme='dark'] {
   --background: #353535;
+  --secondary-background: #414141;
   --text: #f7f7ff;
   --primary: #C2BB9F;
   --secondary: #4f5d75;
+  --green: #69a09a;
+  --green-strong: #006d77;
+  --red: #d16a5e;
   --other: #bfc0c0;
+  --hover: #494949;
 }
 
 body, input, textarea, button {
-  font: 400 1rem 'Montserrat', sans-serif;
+  font: 300 1rem 'Montserrat', sans-serif;
   color: var(--text);
 }
 
@@ -62,4 +71,10 @@ button {
 
 a {
   color: inherit;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 2rem;
+  margin-left: 8px;
 }
