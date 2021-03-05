@@ -1,0 +1,64 @@
+.container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+
+  width: 275px;
+  height: 100%;
+  background: var(--secondary-background);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container .profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 24px 16px 0;
+}
+
+.container .profile img {
+  width: 72px;
+  border-radius: 50%;
+
+  margin-right: 16px;
+}
+
+.container .options {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  margin-top: 5rem;
+}
+
+.container .item {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  font-size: 1.5rem;
+  padding: 1rem 16px;
+
+  width: 100%;
+}
+
+.container button:hover {
+  background: var(--hover);
+  /* filter: brightness(20%); */
+}
+
+.container .item p {
+  margin-left: 16px;
+}
+
+.container .logout {
+  display: flex;
+  align-items: center;
+}
+
+
