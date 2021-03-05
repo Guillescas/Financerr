@@ -1,0 +1,48 @@
+.container {
+  width: 400px;
+  height: 180px;
+
+  border-radius: 8px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.container.income {
+  background: var(--green);
+}
+
+.container.outcome {
+  background: var(--red);
+}
+
+.container .title {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+
+  padding: 16px;
+}
+
+.container .value {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: left;
+  padding: 0 24px;
+}
+
+.container .value p {
+  width: 100%;
+  font-size: 1.5rem;
+}
+
+.container .value span {
+  width: 100%;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
