@@ -28,6 +28,12 @@
   margin-right: 16px;
 }
 
+.container .profile h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-left: 8px;
+}
+
 .container .options {
   display: flex;
   flex: 1;
@@ -41,7 +47,7 @@
   align-items: center;
   justify-content: left;
 
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 1rem 16px;
 
   width: 100%;
@@ -49,7 +55,6 @@
 
 .container button:hover {
   background: var(--hover);
-  /* filter: brightness(20%); */
 }
 
 .container .item p {
